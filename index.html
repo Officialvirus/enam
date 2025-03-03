@@ -3,145 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eNAM - National Agriculture Market</title>
+    <title>e-NAM - National Agriculture Market</title>
     <style>
         /* General Styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: #f5f5f5;
         }
-        
-        /* Header */
-        .header {
-            background: #004d00;
-            padding: 15px;
+        header {
+            background-color: #007b3d;
             color: white;
+            padding: 15px;
             text-align: center;
-            font-size: 24px;
-            font-weight: bold;
         }
-
-        /* Navbar */
-        .navbar {
+        nav {
             display: flex;
             justify-content: center;
-            background-color: #008000;
+            background-color: #005a2c;
             padding: 10px;
         }
-
-        .navbar a {
+        nav a {
             color: white;
-            padding: 10px 20px;
             text-decoration: none;
-            font-size: 18px;
+            margin: 0 15px;
+            font-weight: bold;
         }
-
-        .navbar a:hover {
-            background-color: #006400;
-            border-radius: 5px;
+        nav a:hover {
+            text-decoration: underline;
         }
-
-        /* Main Content */
         .container {
             padding: 20px;
-            text-align: center;
-        }
-
-        /* 3D Section */
-        .three-d-card {
-            background: white;
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 600px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .three-d-card:hover {
-            transform: scale(1.05);
-        }
-
-        .three-d-card h2 {
-            color: #004d00;
-        }
-
-        /* Image Section */
-        .image-banner {
-            width: 100%;
-            max-width: 800px;
+            max-width: 1200px;
             margin: auto;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-
-        .image-banner img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        .section {
+            margin-bottom: 30px;
         }
-
-        /* Footer */
-        .footer {
-            background: #004d00;
+        .section h2 {
+            color: #007b3d;
+        }
+        .stakeholder-box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .stakeholder {
+            width: 30%;
+            padding: 15px;
+            margin: 10px 0;
+            background: #e0f2f1;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .stakeholder img {
+            width: 50px;
+            height: 50px;
+        }
+        footer {
+            background-color: #007b3d;
             color: white;
             text-align: center;
             padding: 15px;
             margin-top: 20px;
         }
-
-        /* Mobile Responsive */
-        @media (max-width: 600px) {
-            .navbar {
-                flex-direction: column;
-            }
-
-            .navbar a {
-                text-align: center;
-                padding: 10px;
-            }
-
-            .three-d-card {
-                width: 90%;
+        .btn {
+            background: #007b3d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #005a2c;
+        }
+        @media (max-width: 768px) {
+            .stakeholder {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        eNAM - National Agriculture Market
-    </div>
+    <!-- Header Section -->
+    <header>
+        <h1>National Agriculture Market (e-NAM)</h1>
+    </header>
 
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </div>
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#stakeholders">Stakeholders</a>
+        <a href="#mandis">e-NAM Mandis</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <div class="container">
-        <div class="three-d-card">
-            <h2>Reach More Traders</h2>
-            <p>✔ Sell 221 Commodities</p>
-            <p>✔ Transparent e-bidding</p>
-            <p>✔ Direct Online Payments</p>
-        </div>
 
-        <div class="image-banner">
-            <img src="https://via.placeholder.com/800x400" alt="Agriculture Banner">
-        </div>
+        <!-- About e-NAM -->
+        <section id="about" class="section">
+            <h2>About e-NAM</h2>
+            <p>The National Agriculture Market (e-NAM) is an online trading platform for agricultural commodities in India. It integrates APMCs and enables farmers to sell their produce transparently.</p>
+            <a href="#" class="btn">Learn More</a>
+        </section>
 
-        <div class="three-d-card">
-            <h2>New 21 Mandis Integration in Rajasthan</h2>
-            <p>21 new mandis added in Rajasthan. Now total 1410 mandis are on eNAM.</p>
-        </div>
+        <!-- Stakeholders Section -->
+        <section id="stakeholders" class="section">
+            <h2>Stakeholders</h2>
+            <div class="stakeholder-box">
+                <div class="stakeholder">
+                    <img src="data:image/png;base64,..." alt="Farmer">
+                    <h3>Farmers</h3>
+                    <p>Farmers can sell their produce online to get better market rates.</p>
+                </div>
+                <div class="stakeholder">
+                    <img src="data:image/png;base64,..." alt="Trader">
+                    <h3>Traders</h3>
+                    <p>Traders can buy quality produce at competitive prices.</p>
+                </div>
+                <div class="stakeholder">
+                    <img src="data:image/png;base64,..." alt="APMC">
+                    <h3>APMCs</h3>
+                    <p>APMCs help regulate and facilitate agricultural trade.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- e-NAM Mandis -->
+        <section id="mandis" class="section">
+            <h2>e-NAM Mandis</h2>
+            <p>Currently, <strong>over 1,000 mandis</strong> across India are integrated with e-NAM.</p>
+            <ul>
+                <li>Uttar Pradesh - 150 Mandis</li>
+                <li>Maharashtra - 70 Mandis</li>
+                <li>Madhya Pradesh - 58 Mandis</li>
+                <li>... and many more</li>
+            </ul>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources" class="section">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="#">Farmer Registration Guide</a></li>
+                <li><a href="#">Trader Registration Guide</a></li>
+                <li><a href="#">Training Manuals</a></li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p><strong>Helpline:</strong> 1800-270-0224</p>
+            <p><strong>Email:</strong> support@enam.gov.in</p>
+        </section>
+
     </div>
 
-    <div class="footer">
-        &copy; 2025 National Agriculture Market | Government of India
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 National Agriculture Market. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
